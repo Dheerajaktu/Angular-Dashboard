@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container card-basic\">\n\n\n\n    <table mat-table [dataSource]=\"dataSource\">\n        <!-- id Column -->\n        <ng-container matColumnDef=\"id\">\n            <th width=\"20%\" class=\"bg-header-id\" mat-header-cell *matHeaderCellDef>Id</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.id}}</td>\n        </ng-container>\n\n        <!--name Column -->\n        <ng-container matColumnDef=\"name\">\n            <th width=\"50%\" class=\"bg-header\" mat-header-cell *matHeaderCellDef>Name</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.name}}</td>\n        </ng-container>\n\n        <!-- email Column -->\n        <ng-container matColumnDef=\"email\">\n            <th width=\"30%\" class=\"bg-header-email\" mat-header-cell *matHeaderCellDef>Email</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.email}}</td>\n        </ng-container>\n\n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n    </table>\n\n    <mat-card *ngIf=\"isLoading\" style=\"display: flex; justify-content: center; align-items: center\">\n        <mat-progress-spinner color=\"primary\" mode=\"indeterminate\">\n        </mat-progress-spinner>\n    </mat-card>\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container card-basic\">\n    <table mat-table [dataSource]=\"dataSource\">\n        <!-- id Column -->\n        <ng-container matColumnDef=\"id\">\n            <th width=\"20%\" class=\"bg-header-id\" mat-header-cell *matHeaderCellDef>Id</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.id}}</td>\n        </ng-container>\n\n        <!--name Column -->\n        <ng-container matColumnDef=\"name\">\n            <th width=\"50%\" class=\"bg-header\" mat-header-cell *matHeaderCellDef>Name</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.name}}</td>\n        </ng-container>\n\n        <!-- email Column -->\n        <ng-container matColumnDef=\"email\">\n            <th width=\"30%\" class=\"bg-header-email\" mat-header-cell *matHeaderCellDef>Email</th>\n            <td mat-cell *matCellDef=\"let row\">{{row.email}}</td>\n        </ng-container>\n\n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n    </table>\n\n    <mat-card *ngIf=\"isLoading\" style=\"display: flex; justify-content: center; align-items: center\">\n        <mat-progress-spinner color=\"primary\" mode=\"indeterminate\">\n        </mat-progress-spinner>\n    </mat-card>\n\n</div>\n");
 
 /***/ }),
 
@@ -2314,7 +2314,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/dheeraj/Desktop/Assesment and Udemy Courses/Customize Dashboard/Dashboard1/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/dheeraj/Desktop/Codebase/Assesment and Udemy Courses/Customize Dashboard/Dashboard1/src/main.ts */"./src/main.ts");
 
 
 /***/ })
