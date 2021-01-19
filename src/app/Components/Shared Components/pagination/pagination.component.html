@@ -1,0 +1,12 @@
+<mat-paginator style="display: none">
+</mat-paginator>
+<div style="padding-top: 10px;">
+    <ul class="pagination">
+        <li class="page-item" (click)="changePage('-2')">
+            <<</li> <li *ngFor='let in of convertNumToArray(pageInTable); let i = index'
+                [ngClass]="(paginator && paginator.pageIndex == i) ? 'select-page-table' : 'unselect-page-table'"
+                class="page-item" (click)="changePage(i)">{{i+1}}
+        </li>
+        <li class="page-item" (click)="changePage('-3')">>></li>
+    </ul>
+</div>

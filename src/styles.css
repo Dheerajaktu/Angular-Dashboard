@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.card-basic {
+  margin: 10px;
+}
+
+.alert-form {
+  font-size: 12px;
+  font-family: system-ui;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+/* this styling from navigation component */
+
+/* .sidenav {
+  width: 200px;
+  background-color: #4d668c;
+}
+
+.mat-toolbar-info {
+  background-color: #4d668c;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+} */

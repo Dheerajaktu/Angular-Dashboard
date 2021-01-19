@@ -1,0 +1,103 @@
+<div class="card-basic" xmlns="http://www.w3.org/1999/html">
+  <div class="card-header">
+    <p style="color: #4d668c;font-size: 20px;">Login Form</p>
+  </div>
+
+  <div class="card-body">
+    <form [formGroup]="forgetPasswordForm" (ngSubmit)="onLogin()">
+      <div class="row">
+        <div class="col-md-4">
+          <label>User Id</label>
+          <input type="text" class="form-control" formControlName="id">
+        </div>
+      </div>
+      <mat-error *ngIf="forgetPasswordForm.controls.id.invalid && forgetPasswordForm.controls.id.touched">
+        <span class="alert-form">Please Enter a Valid User id</span>
+      </mat-error>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="pass">
+        </div>
+      </div>
+
+      <mat-error *ngIf="forgetPasswordForm.controls.pass.invalid && forgetPasswordForm.controls.pass.touched">
+        <span class="alert-form">Please Enter Password</span>
+      </mat-error>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary"
+            style="background-color: #4d668c" (click)="onLogin()">Login
+    </button>&nbsp;
+    <button class="mat-stroked-button" (click)="forgetPassword()">Forget Password</button>
+  </div>
+</div>
+
+<!------------------------------Signup form------------------------------------------------>
+<div class="card-basic">
+  <div class="card-header" style="background-color: #4d668c;">
+    <p style="color: white;font-size: 20px;">Signup Form</p>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+      <div class="row">
+        <div class="col-md-3">
+          <label>First Name</label>
+          <input type="text" class="form-control" formControlName="firstName">
+          <mat-error *ngIf="signupForm.controls.firstName.invalid && signupForm.controls.firstName.touched">
+            <span class="alert-form">Please Enter First Name</span>
+          </mat-error>
+        </div>
+
+        <div class="col-md-3">
+          <label>Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName">
+          <mat-error *ngIf="signupForm.controls.lastName.invalid && signupForm.controls.lastName.touched">
+            <span class="alert-form">Please Enter Last Name</span>
+          </mat-error>
+        </div>
+
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <label>Email</label>
+          <input type="text" class="form-control" formControlName="email">
+          <mat-error *ngIf="signupForm.controls.email.invalid && signupForm.controls.email.touched">
+            <span class="alert-form">Please Enter a Valid Email id</span>
+          </mat-error>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="password">
+          <mat-error *ngIf="signupForm.controls.password.invalid && signupForm.controls.password.touched">
+            <span class="alert-form">Please Enter a Password</span>
+          </mat-error>
+        </div>
+        <div class="col-md-3">
+          <label>Confirm Password</label>
+          <input type="password" class="form-control" formControlName="confirmPassword">
+          <mat-error *ngIf="signupForm.controls.confirmPassword.invalid && signupForm.controls.confirmPassword.touched">
+            <span class="alert-form">Please Confirm Password!</span>
+          </mat-error>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary" style="background-color: #4d668c" (click)="onSignup()">Signup</button>&nbsp;
+    <button class="btn btn-danger">Reset</button>
+  </div>
+</div>
+
+
+
+
+
+
+

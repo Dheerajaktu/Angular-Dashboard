@@ -1,0 +1,142 @@
+<div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="mat-card card-basic" style="background-color: #4d668c;color:white">
+        <!--<p>Photo Here</p>-->
+        <img [src]="url ? url : 'https://pbs.twimg.com/profile_images/1057966438814646272/M1cdrSh8.jpg'"
+           style="border-radius:200px;margin:auto;max-width:140px;" class="img-responsive"> <br />
+        <input type='file' (change)="onSelectFile($event)" class="input-picture">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mat-card card-basic" style="background-color: #4d668c;color:white;border-radius: 5px;">
+        <label style="color: white;font-family: serif;">Dheeraj Sharma</label><br><p style="font-size: 15px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          Software Engineer @ Jellyfish Technologies</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="card-basic">
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <div class="mat-card card-basic">
+        <label>Company Name</label>
+        <input type="text" class="form-control" placeholder="Jelllyfish Technologies" disabled>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+
+      <div class="mat-card card-basic">
+        <label>Employee Code</label>
+        <input type="text" class="form-control" placeholder="A54123XZY" disabled>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+
+      <div class="mat-card card-basic">
+        <label>Email Address</label>
+        <input type="text" class="form-control" placeholder="dheeraj.sharma@jellyfishtechnologies.com" disabled>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="mat-card card-basic">
+          <label>First Name</label>
+          <input type="text" class="form-control" placeholder="Dheeraj">
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="mat-card card-basic">
+          <label>Last Name</label>
+          <input type="text" class="form-control" placeholder="Sharma">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="mat-card card-basic">
+          <label>Office Location</label>
+          <input type="text" class="form-control" placeholder="H-134, Sector 63, NOIDA">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mat-card card-basic">
+          <label>City-Country</label>
+          <input type="text" class="form-control" placeholder="Noida-India">
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="mat-card card-basic">
+          <label>Zip Code</label>
+          <input type="number" class="form-control" placeholder="201301">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <hr class="card-basic">
+  <div class="card-basic">
+    <button type="button" class="btn btn-success btn-sm card-basic"
+      style="background-color: #4d668c">Update</button>&nbsp;
+    <button type="button" class="btn btn-danger btn-sm card-basic">Edit </button>
+  </div>
+  <!--<div class="row card-basic">-->
+
+  <!--<div class="col-md-1 ">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></div>-->
+  <!--</div>-->
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="col-md-1">-->
+  <!--<div class="mat-card card-basic">-->
+  <!--<i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i>-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <!--</div>-->
+  <!--</div>-->

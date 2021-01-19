@@ -1,0 +1,59 @@
+<div class="container card-basic shadow">
+
+    <mat-horizontal-stepper linear #stepper>
+
+        <!-- FIRST FORM HERE -->
+        <mat-step [stepControl]="nameForm">
+            <form [formGroup]="nameForm">
+                <ng-template matStepLabel>Fill Basic Detail</ng-template>
+                <mat-form-field class="input-width">
+                    <input matInput placeholder="Card Holder Name" formControlName="name" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext class="btn btn-success">Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <!-- NOW SECOND FORM HERE    -->
+        <mat-step [stepControl]="cardForm">
+            <form [formGroup]="cardForm">
+                <ng-template matStepLabel>Fill Card Number</ng-template>
+                <mat-form-field class="input-width">
+                    <input type="number" matInput placeholder="Card Nuber" formControlName="cardNumber" required>
+                </mat-form-field>
+                <!-- <mat-error *ngIf="cardForm.controls.cardNumber.Valid && cardForm.controls.cardNumber.touched">
+                    <span class="alert-form">Please Enter Card Number</span>
+                </mat-error> -->
+                <div>
+                    <button mat-button matStepperPrevious class="btn btn-danger">Back</button>&nbsp;
+                    <button mat-button matStepperNext class="btn btn-success">Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <!-- NOW THIRD FORM HERE    -->
+        <mat-step [stepControl]="cvvForm">
+            <form [formGroup]="cvvForm">
+                <ng-template matStepLabel>Fill Card Expiry Date</ng-template>
+                <mat-form-field class="input-width">
+                    <input type="number" matInput placeholder="CVV Number" formControlName="cvvNumber" required><br><br>
+                    <!-- <input type="month" matInput placeholder="Expiry" formControlName="cvvNumber" required> -->
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious class="btn btn-danger">Back</button>&nbsp;
+                    <button mat-button matStepperNext class="btn btn-success">Next</button>
+
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step>
+            <ng-template matStepLabel>Pay</ng-template>
+            You are now done.
+            <div>
+                <button mat-button matStepperPrevious class="btn btn-danger">Back</button>&nbsp;
+                <button mat-button (click)="stepper.reset()" class="btn btn-primary">Reset</button>
+            </div>
+        </mat-step>
+
+    </mat-horizontal-stepper>
+</div>

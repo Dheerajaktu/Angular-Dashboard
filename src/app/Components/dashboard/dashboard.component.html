@@ -1,0 +1,69 @@
+<!--<div class="grid-container">-->
+<!--&lt;!&ndash;<h1 class="mat-h1">Dashboard</h1>&ndash;&gt;-->
+<!--<mat-grid-list cols="2" rowHeight="550px">-->
+<!--<mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">-->
+<!--<mat-card class="dashboard-card">-->
+<!--<mat-card-header>-->
+
+<!--<mat-card-title>-->
+<!--<button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">-->
+<!--<mat-icon>more_vert</mat-icon>-->
+<!--</button>-->
+<!--<mat-menu #menu="matMenu" xPosition="before">-->
+<!--<button mat-menu-item>Expand</button>-->
+<!--<button mat-menu-item>Remove</button>-->
+<!--</mat-menu>-->
+<!--</mat-card-title>-->
+<!--</mat-card-header>-->
+<!--<mat-card-content class="dashboard-card-content">-->
+<!--<app-pie-chart></app-pie-chart>-->
+
+<!--</mat-card-content>-->
+<!--</mat-card>-->
+<!--</mat-grid-tile>-->
+<!--</mat-grid-list>-->
+<!--</div>-->
+
+
+<!--<mat-grid-list class="grid-container">-->
+<!--<mat-card-header>-->
+<!--<mat-card-title>-->
+<!--<mat-card>-->
+<!--<app-pie-chart></app-pie-chart>-->
+<!--</mat-card>-->
+<!--</mat-card-title>-->
+<!--</mat-card-header>-->
+<!--</mat-grid-list>-->
+
+<!--<div class="card" style="margin:10px">-->
+<!--<div class="mat-card card-header">-->
+<!--<p>Jellyfish Technologies Technology Ratio</p>-->
+<!--</div>-->
+
+<!--</div>-->
+<div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="mat-card card-basic" >
+    <app-pie-chart></app-pie-chart>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="mat-card card-basic">
+    <app-bar-chart></app-bar-chart>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="mat-card card-basic">
+    <app-line-chart></app-line-chart>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="mat-card card-basic">
+    <!--<app-bar-chart></app-bar-chart>-->
+    </div>
+  </div>
+</div>
+</div>
